@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="pstyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product</h1>
+            <p>Manage your products here.</p>
+        </header>
+        <main>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="bottles">Bottles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sub-category">Sub-category:</label>
+                    <select id="sub-category" name="sub-category">
+                        <option value="plastic">Plastic</option>
+                        <option value="glass">Glass</option>
+                        <option value="tin">Tin</option>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <label for="quantity">Quantity(in Kg):</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="total-price">Total Price:</label>
+                    <input type="text" id="total-price" name="total-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="seller-name">Seller Name:</label>
+                    <input type="text" id="seller-name" name="seller-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="seller-email">Seller Email:</label>
+                    <input type="email" id="seller-email" name="seller-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Add Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="publish-button">Publish</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
